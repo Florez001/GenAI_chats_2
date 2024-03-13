@@ -92,3 +92,51 @@ Citations:
 [18] https://kth.diva-portal.org/smash/get/diva2:1807713/FULLTEXT01.pdf
 [19] https://thecommonsjournal.org/articles/10.5334/ijc.1275
 [20] https://conference.sdo.esoc.esa.int/proceedings/sdc3/paper/67/SDC3-paper67.pdf
+
+User: What is math model that is used in this paper?
+
+Perplexity: The mathematical model used in the paper "A Population Dynamics Approach to the Distribution of Space Debris in Low Earth Orbit" is a diffusion-collision model that describes the time evolution of the spatial density of orbital debris in Low Earth Orbit (LEO). The model is based on a diffusion equation with a source and collision term, which is used to simulate the effects of atmospheric drag, gravitational perturbations, solar wind, and collisions between debris objects.
+
+The diffusion equation is given by:
+
+$$
+\frac{\partial}{\partial t} u(r, t)=\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(D(r) r^{2} \frac{\partial}{\partial r} u(r, t)\right)+\Phi(u, r)
+$$
+
+where $$ u(r, t) $$ is the debris density at a distance $$ r $$ from the center of the Earth and time $$ t $$, and $$ D(r) $$ is the diffusion coefficient that varies with altitude. The term $$ \Phi(u, r) $$ represents the "birth and death process" for debris, which includes the creation of debris from collisions and the deposition of new objects by ground launches.
+
+The diffusion coefficient $$ D(r) $$ is modeled as a piecewise function to capture the altitude dependence of atmospheric drag and solar wind effects:
+
+$$
+D(r)=\left\{\begin{array}{cl}
+\alpha \exp \left(-\lambda\left(r-r_{E}\right)\right), & r<r_{E}+1000 \\
+\xi, & r \geq r_{E}+1000
+\end{array} \right.
+$$
+
+where $$ \alpha $$ and $$ \xi $$ set the diffusion rate in the near and far field, respectively, and $$ \lambda $$ sets the spatial scale.
+
+The collision term $$ C(u) $$ is proposed to be of Smoluchowski type for binary collisions of space debris:
+
+$$
+C(u)=\left.\frac{\partial u(r, t)}{\partial t}\right|_{\text {collision }}=\frac{1}{\sqrt{2}} \beta \gamma \sqrt{\frac{G M}{r+r_{E}}} u^{2}(r, t)
+$$
+
+where $$ G $$ is the gravitational constant, $$ M $$ is the mass of Earth, $$ \beta $$ is the average number of new particles created in a binary collision, and $$ \gamma $$ is the mean cross-sectional area of space debris.
+
+The deposition rate $$ \Delta(r, t) $$ is assumed to be separable, with $$ R(r) $$ representing the spatial component and $$ T(t) $$ the temporal component, reflecting the locations and timing of object deposition into orbit.
+
+Boundary conditions are applied at the lower and upper altitudes to represent the burning up of debris entering the atmosphere and the absence of debris migration from the MEO region, respectively.
+
+The model is numerically solved using the Crank-Nicolson method, and the results are compared with observed data and predictions from NASA's LEGEND model to validate the model and assess the impact of various factors on the future distribution of space debris[1].
+
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/8727087/4249b563-1640-4653-b521-74b40fc2c044/a pop dyn approach t dis of space in low earth orbit.pdf
+[2] https://arxiv.org/abs/2210.16179
+[3] https://www.researchgate.net/publication/369071643_A_Population_Dynamics_Approach_to_the_Distribution_of_Space_Debris_in_Low_Earth_Orbit
+[4] https://www.esa.int/gsp/ACT/doc/ARI/ARI%20Study%20Report/ACT-RPT-MAD-ARI-1810-Game-Theoretic-Analysis-of-Space-Debris-Removal-Dilemma-FR.pdf
+[5] https://www.researchgate.net/figure/Number-of-the-space-debris-as-function-of-time-without-mutual-collision-obtained-from_fig3_332618459
+[6] https://spj.science.org/doi/10.34133/space.0005
+[7] https://www.japcc.org/articles/a-model-of-the-space-debris-environment/
+[8] https://www.esa.int/gsp/ACT/doc/ARI/ARI%20Study%20Report/ACT-RPT-MAD-ARI-10-6411-Pisa-Active_Removal_of_Space_Debris-Foam.pdf
+[9] https://www.sciencedirect.com/science/article/abs/pii/S0094576521006366
