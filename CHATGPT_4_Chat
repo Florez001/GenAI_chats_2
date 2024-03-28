@@ -8,7 +8,7 @@ The paper proposes a diffusion-collision model to study the evolution of space d
 
 User
 What is population dynamics in relation to space debris ? 
-ChatGPT
+ChatGPT 
 In the context of space debris, population dynamics refers to the study of how the population of space debris objects changes over time, influenced by factors such as collisions, fragmentations, and the addition of new debris from human activities. The paper presents a population dynamics approach to model the distribution and evolution of space debris in Low Earth Orbit (LEO). The model considers the growth of the debris population and its spatial distribution, taking into account processes such as diffusion, collisions, and the impact of ground-launch policies on debris density. The goal is to understand the timescales for uncontrolled growth and to explore strategies for mitigating future collision risks with active satellites or spacecraft​​.
 
 User
