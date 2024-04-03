@@ -52,12 +52,15 @@ What other parameters can be added to this model ?
 ChatGPT
 To enhance the accuracy and applicability of the diffusion-collision model, several additional parameters could be considered:
 
-Orbital Decay Rates: Incorporating more detailed models of orbital decay rates due to atmospheric drag, which can vary with solar activity and atmospheric conditions.
+Orbital Decay Rates: Incorporating more detailed models of orbital decay rates due to atmospheric drag, which can vary with solar activity and atmospheric 
+conditions.
 
-Collision Probability Models: Refining the collision term by using more sophisticated models for collision probability that account for factors such as relative velocities,
+Collision Probability Models: Refining the collision term by using more sophisticated models for collision probability that account for factors such as relative
+velocities,
 sizes, and shapes of debris objects.
 
-Debris Fragmentation Models: Including more detailed models of debris fragmentation resulting from collisions, which can provide a better estimate of the number and size
+Debris Fragmentation Models: Including more detailed models of debris fragmentation resulting from collisions, which can provide a better estimate of the
+number and size
 distribution of debris created in each collision event.
 
 Launch Traffic Models: Integrating models of future launch traffic to predict the addition of new objects to LEO and their potential impact on debris density.
@@ -106,7 +109,8 @@ Lindblad resonances: These are a type of mean-motion resonance that occur in dis
 They can cause gaps or ring structures to form in the disk, as particles are trapped in stable orbits or ejected from unstable ones.
 
 Kozai-Lidov resonance: This is a more complex type of resonance that occurs when there is a large inclination difference between two orbits. 
-It can lead to large oscillations in the orbit's eccentricity and inclination over time. While this is more relevant for celestial bodies like asteroids or moons, it could theoretically affect space debris in highly inclined orbits.
+It can lead to large oscillations in the orbit's eccentricity and inclination over time. While this is more relevant for celestial bodies like asteroids or moons,
+it could theoretically affect space debris in highly inclined orbits.
 
 Secular resonances: These occur when the precession rates of the orbits (the slow change in the orientation of the orbit) are in resonance.
 This can lead to gradual changes in the eccentricity and inclination of the orbits over long time scales.
