@@ -88,7 +88,10 @@ aim to provide insights into the timescales for uncontrolled growth of the debri
 to evaluate the effectiveness of different launch policies and cleanup strategies in reducing
 future collision risks[1].
 
-In essence, population dynamics in relation to space debris applies concepts from ecology and population biology to the study of space debris, using mathematical models to understand how the debris population evolves over time under various influences. This approach is valuable for informing space policy and mitigation strategies to ensure the long-term sustainability of space activities[1][2].
+In essence, population dynamics in relation to space debris applies concepts from ecology and population biology
+to the study of space debris, using mathematical models to understand how the debris population evolves over time 
+under various influences. This approach is valuable for informing space policy and mitigation strategies to ensure
+the long-term sustainability of space activities[1][2].
 
 Citations:
 [1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/8727087/4249b563-1640
@@ -307,7 +310,8 @@ different debris populations (e.g., small vs. large debris) could provide insigh
 into the cascading effects of debris-generating events.
 
 10. Develop user-friendly interfaces: To facilitate wider adoption and use of the
-model by policymakers, space agencies, and industry stakeholders, user-friendly interfaces or web-based tools could be developed to allow easy exploration of different scenarios and mitigation strategies.
+model by policymakers, space agencies, and industry stakeholders, user-friendly interfaces or web-based tools 
+could be developed to allow easy exploration of different scenarios and mitigation strategies.
 
 These are just a few potential directions for extending this research, leveraging
 advances in mathematics, computational techniques, and observational data to further
