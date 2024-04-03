@@ -7,7 +7,8 @@ Distribution of Space Debris in Low Earth Orbit" by  John Jurkiewicz and Peter H
 **Key Problem**
 
 Space debris in Low Earth Orbit (LEO) is a growing hazard to satellites, spacecraft, 
-and future space missions. This debris comes from various sources like rocket launches, discarded components, and collisions, increasing the risk of further collisions and creating a dangerous chain reaction.
+and future space missions. This debris comes from various sources like rocket launches, discarded components, 
+and collisions, increasing the risk of further collisions and creating a dangerous chain reaction.
 
 **Proposed Approach**
 
@@ -106,7 +107,8 @@ This often involves concepts like probability and  random movement.
     *  Outcome of collisions: Do the elements combine, shatter, or something else?
 4. **Simulation:** 
     *  Software simulations or calculations are used to 'play out' the system's 
-evolution over time. This involves tracking many, many elements as they randomly move and interact according to the rules you've defined.
+evolution over time. This involves tracking many, many elements as they randomly move and interact according to
+the rules you've defined.
 5. **Analysis:**
      * Examine the overall patterns of change in the system 
 (how does debris density grow? How do proteins adopt their shape?)
