@@ -227,9 +227,12 @@ of debris behavior and inform strategies for mitigating the space debris problem
 User
 What is the model that was used in  "Passive Debris Removal using Orbital Resonances" by Aaron J. Rosengren.
 ChatGPT
-The model used in "Passive Debris Removal using Orbital Resonances" by Aaron J. Rosengren focuses on exploiting the dynamical instabilities brought 
-on by resonant perturbations to naturally guide defunct satellites and space debris towards re-entry into the Earth's atmosphere. The model considers
-the effects of orbital resonances, particularly lunisolar and radiation pressure resonances, on the orbital eccentricity and long-term evolution of space debris.
+The model used in "Passive Debris Removal using Orbital Resonances" by Aaron J. Rosengren focuses on
+exploiting the dynamical instabilities brought 
+on by resonant perturbations to naturally guide defunct satellites and space debris towards re-entry 
+into the Earth's atmosphere. The model considers
+the effects of orbital resonances, particularly lunisolar and radiation pressure resonances, on the 
+orbital eccentricity and long-term evolution of space debris.
 
 Key aspects of the model include:
 
