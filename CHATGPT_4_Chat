@@ -236,23 +236,32 @@ orbital eccentricity and long-term evolution of space debris.
 
 Key aspects of the model include:
 
-Resonant Dynamics: The model explores the impact of various orbital resonances, such as mean-motion resonances (MMRs), lunisolar secular resonances, 
+Resonant Dynamics: The model explores the impact of various orbital resonances,
+such as mean-motion resonances (MMRs), lunisolar secular resonances, 
 and tesseral resonances, on the behavior of space debris.
 
-Chaos and Instability: The model examines the transition from order to dynamical chaos in certain regions of phase space due to the growth and
-overlap of resonances. This chaotic behavior can lead to significant drifts in circumterrestrial phase space, allowing debris to diffuse into
+Chaos and Instability: The model examines the transition from order to dynamical 
+chaos in certain regions of phase space due to the growth and
+overlap of resonances. This chaotic behavior can lead to significant drifts in
+circumterrestrial phase space, allowing debris to diffuse into
 different regions and eventually re-enter the Earth's atmosphere.
 
-Design of Disposal Orbits: The model investigates the design of disposal orbits that take advantage of resonant dynamics to achieve passive debris removal.
-This includes identifying escape routes and disposal regions influenced by resonances and non-gravitational perturbations.
+Design of Disposal Orbits: The model investigates the design of disposal orbits that 
+take advantage of resonant dynamics to achieve passive debris removal.
+This includes identifying escape routes and disposal regions influenced by resonances 
+and non-gravitational perturbations.
 
-Lifetime Maps: The model provides lifetime maps of satellites equipped with large sails or other area-to-mass-ratio-augmenting devices,
-showing how resonances can be used to shorten the orbit lifetimes and comply with debris mitigation guidelines.
+Lifetime Maps: The model provides lifetime maps of satellites equipped with large 
+sails or other area-to-mass-ratio-augmenting devices,
+showing how resonances can be used to shorten the orbit lifetimes and comply with
+debris mitigation guidelines.
 
-Launch Window Maps: The model explores the implications of launch windows and orbital parameters on the lifetime and demise of satellites,
+Launch Window Maps: The model explores the implications of launch windows and 
+orbital parameters on the lifetime and demise of satellites,
 particularly for highly eccentric orbit (HEO) science missions.
 
-Overall, the model aims to provide a comprehensive understanding of the resonant dynamics of Earth-satellite orbits and their potential for
+Overall, the model aims to provide a comprehensive understanding of the resonant
+dynamics of Earth-satellite orbits and their potential for
 passive debris removal and mitigation​​.
 
 User
@@ -270,31 +279,44 @@ JJ_SpaceDebris_Modules.py
 Python
 I'm having a hard time getting this code to run. 
 ChatGPT
-The code you've provided seems to be a numerical implementation of a model for space debris evolution. It uses a finite difference method 
-to solve a partial differential equation (PDE) that models the distribution of space debris over time and altitude. Here's a brief overview of what the code does:
+The code you've provided seems to be a numerical implementation of a model for space
+debris evolution. It uses a finite difference method 
+to solve a partial differential equation (PDE) that models the distribution of space 
+debris over time and altitude. Here's a brief overview of what the code does:
 
-Imports and Initializations: The code imports necessary libraries and defines initial parameters such as the time and altitude bounds,
-the number of mesh points, and initializes arrays for altitude (r), time (t), and the debris density (U).
+Imports and Initializations: The code imports necessary libraries and defines
+initial parameters such as the time and altitude bounds,
+the number of mesh points, and initializes arrays for altitude (r), time (t),
+and the debris density (U).
 
-Model Parameters: It sets up physical constants like the mass of the Earth (M), gravitational constant (G), average cross-sectional area of space debris (beta),
+Model Parameters: It sets up physical constants like the mass of the Earth (M), 
+gravitational constant (G), average cross-sectional area of space debris (beta),
 average number of new debris created in a collision (gammaBar), and the diffusivity function (D).
 
-Boundary Conditions: The code defines boundary conditions for the PDE, specifically a Dirichlet condition at the lower boundary (surface of the Earth) and 
+Boundary Conditions: The code defines boundary conditions for the PDE,
+specifically a Dirichlet condition at the lower boundary (surface of the Earth) and 
 a Neumann condition at the upper boundary.
 
-Temporal Factor of Debris Deposition: It initializes the temporal factor (T) of the debris deposition term using historical data.
+Temporal Factor of Debris Deposition: It initializes the temporal factor (T)
+of the debris deposition term using historical data.
 
-Finite Difference Method: The code then enters a loop over time steps, updating the debris density using a finite difference approximation of the PDE.
-This involves calculating the diffusion (diff), collision (coll), and deposition (Delta) terms at each time step.
+Finite Difference Method: The code then enters a loop over time steps, updating 
+the debris density using a finite difference approximation of the PDE.
+This involves calculating the diffusion (diff), collision (coll), and deposition
+(Delta) terms at each time step.
 
-Boundary Conditions Update: At each time step, the code updates the boundary conditions for the debris density.
+Boundary Conditions Update: At each time step, the code updates the boundary
+conditions for the debris density.
 
-Solving the System: The code uses a combination of explicit and implicit methods to solve the system of equations. 
-It first computes an explicit update (u1) and then uses the fsolve function to solve an implicit system (u2). The final update is the average of these two solutions.
+Solving the System: The code uses a combination of explicit and implicit methods
+to solve the system of equations. 
+It first computes an explicit update (u1) and then uses the fsolve function to 
+solve an implicit system (u2). The final update is the average of these two solutions.
 
 Updating the Solution: The solution (U) is updated with the new debris density at each time step.
 
-If you're encountering specific issues or errors while running this code, please provide more details so I can assist you further.
+If you're encountering specific issues or errors while running this code, please
+provide more details so I can assist you further.
 
 User
 [{
@@ -320,16 +342,22 @@ User
 }]
 ChatGPT
 The error message you're seeing, "Import 'JJ_SpaceDebris_Modules' could not be resolved," 
-indicates that the Python interpreter is unable to find the module JJ_SpaceDebris_Modules. This can happen for several reasons:
+indicates that the Python interpreter is unable to find the module JJ_SpaceDebris_Modules.
+This can happen for several reasons:
 
-File Location: The file JJ_SpaceDebris_Modules.py might not be in the same directory as JJ_SpaceDebris_Driver.py. Ensure that both files are in the same folder.
+File Location: The file JJ_SpaceDebris_Modules.py might not be in the same directory 
+as JJ_SpaceDebris_Driver.py. Ensure that both files are in the same folder.
 
-Module Name: Double-check that the file name is exactly JJ_SpaceDebris_Modules.py and that there are no typos in the import statement.
+Module Name: Double-check that the file name is exactly JJ_SpaceDebris_Modules.py
+and that there are no typos in the import statement.
 
-Python Path: Python might not be searching the correct directories. You can verify the directories in which Python is searching for modules
-by printing the sys.path variable. You can add the directory containing your module to sys.path using sys.path.append('/path/to/directory').
+Python Path: Python might not be searching the correct directories. You can verify 
+the directories in which Python is searching for modules
+by printing the sys.path variable. You can add the directory containing your
+module to sys.path using sys.path.append('/path/to/directory').
 
-Virtual Environment: If you're using a virtual environment, make sure that it is activated, and the module is installed in that environment.
+Virtual Environment: If you're using a virtual environment, make sure that it is 
+activated, and the module is installed in that environment.
 
 To resolve this issue, you can try the following steps:
 
